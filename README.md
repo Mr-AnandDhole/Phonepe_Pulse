@@ -12,22 +12,26 @@ The PhonePe Pulse website showcases more than 2000+ Crore transactions by consum
 
 # Project Workflow 
 
-Importing the Libraries:
+**Importing the Libraries:**
 
 First we have to import all those libraries. If the libraries are not installed already use the below piece of code to install.
 pip install + "Namee for librarie"
 
-Data extraction:
+**Data extraction:**
 
 Clone the Github using scripting to fetch the data from the Phonepe pulse Github repository and store it in a suitable format such as JSON. Use the below syntax to clone the phonepe github repository into your local drive.
 
-Data transformation:
+**Data transformation:**
 
 In this step the JSON files that are available in the folders are converted into the readeable and understandable DataFrame format by using the for loop and iterating file by file and then finally the DataFrame is created. In order to perform this step I've used os, json and pandas packages. And finally converted the dataframe into CSV file and storing in the local drive.
 
-Database insertion:
+**Database insertion:**
 
 To insert the datadrame into SQL first I've created a new database and tables using "mysql-connector-python" library in Python to connect to a MySQL database and insert the transformed data using SQL commands.
+
+**Data retrieval:**
+
+Finally if needed Using the "mysql-connector-python" library to connect to the MySQL database and fetch the data into a Pandas dataframe.
 
 
 
